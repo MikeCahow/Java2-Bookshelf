@@ -22,6 +22,21 @@ public class Main {
             bookshelf.get(i);
         }
         bookshelf.forEach(System.out::println);
+
+        bookshelf.remove(b1);
+        bookshelf.remove(0);
+        System.out.println(bookshelf.indexOf(b1));
+        System.out.println(bookshelf.indexOf(b2));
+        System.out.println(bookshelf.indexOf(b3));
+        System.out.println(bookshelf.indexOf(b4));
+
+        bookshelf.set(1, b4);
+
+        for(int i = 0; i > bookshelf.size(); i++){
+            bookshelf.get(i);
+        }
+        bookshelf.forEach(System.out::println);
+
     }
 
 }
